@@ -1,0 +1,31 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C07
+# intitule     : Ports en écoute
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C07.ports =====
+# titre    : C07.ports
+===== PORTS TCP/UDP EN ECOUTE =====
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+tcp   LISTEN 0      511          0.0.0.0:80        0.0.0.0:*    users:(("nginx",pid=812,fd=6))
+tcp   LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*    users:(("systemd-resolve",pid=601,fd=14))
+tcp   LISTEN 0      128          0.0.0.0:22        0.0.0.0:*    users:(("sshd",pid=901,fd=3))
+tcp   LISTEN 0      4096         0.0.0.0:5432      0.0.0.0:*    users:(("docker-proxy",pid=1402,fd=4))
+tcp   LISTEN 0      511          0.0.0.0:443       0.0.0.0:*    users:(("nginx",pid=812,fd=7))
+
+===== PORTS TCP EN ECOUTE =====
+State Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+
+===== PORTS UDP EN ECOUTE =====
+State Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+===== LSAF-BLOC FIN id=C07.ports code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C07 - statut d'exécution : termine
+################################################################

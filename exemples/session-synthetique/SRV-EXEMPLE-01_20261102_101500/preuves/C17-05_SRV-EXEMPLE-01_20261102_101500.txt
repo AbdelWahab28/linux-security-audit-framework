@@ -1,0 +1,93 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C17-05
+# intitule     : Réseau / firewall / exposition / TLS
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C17-05.reseau =====
+# titre    : C17-05.reseau
+===== C17-05 - RESEAU / FIREWALL / EXPOSITION / TLS =====
+Serveur : srv-exemple-01
+Date/heure : 2026-11-02 10:15:00
+
+===== SECTIONS LYNIS RESEAU / FIREWALL / WEB / CRYPTO =====
+7:[+] Networking
+
+===== APACHE - ETAT =====
+inactive
+disabled
+
+===== APACHE - CONFIGURATION =====
+apache2ctl : commande absente
+
+===== CUPS - PERMISSIONS =====
+stat: cannot statx '/etc/cups/cupsd.conf': No such file or directory
+
+===== UFW =====
+Status: inactive
+
+===== NFTABLES =====
+table ip filter {
+	chain INPUT {
+		type filter hook input priority filter; policy accept;
+	}
+}
+
+===== IPTABLES FILTER =====
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain FORWARD (policy DROP 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+===== IPTABLES NAT =====
+Chain PREROUTING (policy ACCEPT 0 packets, 0 bytes)
+
+===== IPV6 - ADRESSES GLOBALES =====
+
+===== IPV6 - ROUTES =====
+
+===== ECOUTE IPV6 =====
+
+===== TLS - PORTS CIBLES =====
+
+----- PORT 443 -----
+CONNECTED(00000003)
+subject=CN = srv-exemple-01.example.org
+issuer=CN = srv-exemple-01.example.org
+Verify return code: 18 (self-signed certificate)
+New, TLSv1.2, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+
+----- PORT 8443 -----
+
+----- PORT 9443 -----
+===== LSAF-BLOC FIN id=C17-05.reseau code=0 statut=ok duree_ms=1 =====
+
+===== LSAF-BLOC DEBUT id=C17-05.certificats =====
+# titre    : C17-05.certificats
+===== C17-05 - QUALIFICATION CERTIFICATS TLS =====
+Serveur : srv-exemple-01
+Date/heure : 2026-11-02 10:15:00
+
+
+============================================================
+ PORT TLS : 443
+============================================================
+subject=CN = srv-exemple-01.example.org
+issuer=CN = srv-exemple-01.example.org
+notBefore=Jan  1 00:00:00 2024 GMT
+notAfter=Jan  1 00:00:00 2025 GMT
+serial=01
+===== LSAF-BLOC FIN id=C17-05.certificats code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C17-05 - statut d'exécution : termine
+################################################################

@@ -1,0 +1,41 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C09
+# intitule     : SSH
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C09.ssh =====
+# titre    : C09.ssh
+===== SSH - ETAT DU SERVICE =====
+active
+
+===== SSH - VERSION =====
+OpenSSH_9.2p1 Debian-2, OpenSSL 3.0.13 30 Jan 2024
+
+===== SSH - CONFIGURATION EFFECTIVE =====
+port 22
+listenaddress 0.0.0.0:22
+permitrootlogin without-password
+pubkeyauthentication yes
+passwordauthentication yes
+kbdinteractiveauthentication no
+permitemptypasswords no
+maxauthtries 6
+maxsessions 10
+logingracetime 120
+x11forwarding yes
+allowtcpforwarding yes
+allowagentforwarding yes
+clientaliveinterval 0
+clientalivecountmax 3
+usedns no
+===== LSAF-BLOC FIN id=C09.ssh code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C09 - statut d'exécution : termine
+################################################################

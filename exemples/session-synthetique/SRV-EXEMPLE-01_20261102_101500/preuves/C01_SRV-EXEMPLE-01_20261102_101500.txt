@@ -1,0 +1,47 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C01
+# intitule     : Identification du système
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C01.identification =====
+# titre    : C01.identification
+==================================================
+CONTROLE C01 - IDENTIFICATION DU SYSTEME
+Date de collecte : 2026-11-02 10:15:00 UTC
+==================================================
+
+### NOM D'HOTE
+srv-exemple-01
+srv-exemple-01
+
+### SYSTEME D'EXPLOITATION
+PRETTY_NAME="Ubuntu 22.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+
+### NOYAU ACTIF
+Linux srv-exemple-01 5.15.0-105-generic #1 SMP x86_64 GNU/Linux
+
+### ARCHITECTURE
+x86_64
+64
+
+### VIRTUALISATION
+kvm
+Code retour détection virtualisation : 0
+
+### FIN DU CONTROLE C01
+===== LSAF-BLOC FIN id=C01.identification code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C01 - statut d'exécution : termine
+################################################################

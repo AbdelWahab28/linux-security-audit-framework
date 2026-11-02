@@ -1,0 +1,38 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C17-03
+# intitule     : Permissions / répertoires personnels
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C17-03.permissions =====
+# titre    : C17-03.permissions
+===== C17-03 - PERMISSIONS / HOME / FICHIERS SYSTEME =====
+Serveur : srv-exemple-01
+Date/heure : 2026-11-02 10:15:00
+
+===== PERMISSIONS SUDOERS =====
+  File: /etc/sudoers
+  Size: 755 Blocks: 8 IO Block: 4096 regular file
+Access: (0440/-r--r-----)  Uid: (    0/    root)   Gid: (    0/    root)
+
+  File: /etc/sudoers.d
+Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+
+===== PERMISSIONS HOMES =====
+===== /home/auditeur =====
+drwxr-xr-x 755 auditeur:auditeur /home/auditeur
+===== /home/appli =====
+drwx------ 700 appli:appli /home/appli
+
+===== FICHIERS SYSTEME ECRIVABLES PAR GROUPE/AUTRES =====
+  1234   4 -rw-rw-r--   1 root     root          120 Jan 10 09:00 /etc/appli-exemple/reglages.ini
+===== LSAF-BLOC FIN id=C17-03.permissions code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C17-03 - statut d'exécution : termine
+################################################################

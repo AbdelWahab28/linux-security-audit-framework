@@ -1,0 +1,53 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C03
+# intitule     : État des mises à jour
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C03.paquets =====
+# titre    : C03.paquets
+Listing...
+libexemple1/jammy-updates,jammy-security 1.0-2 amd64 [upgradable from: 1.0-1]
+openssl/jammy-updates,jammy-security 3.0.2-0ubuntu1.99 amd64 [upgradable from: 3.0.2-0ubuntu1.10]
+vim-tiny/jammy-updates 2:8.2.3995-1ubuntu2.99 amd64 [upgradable from: 2:8.2.3995-1ubuntu2.1]
+===== LSAF-BLOC FIN id=C03.paquets code=0 statut=ok duree_ms=1 =====
+
+===== LSAF-BLOC DEBUT id=C03.policy =====
+# titre    : C03.policy
+===== PAQUETS INTERROGES =====
+openssh-server:
+  Installed: 1:9.2p1-2
+  Candidate: 1:9.2p1-2
+===== LSAF-BLOC FIN id=C03.policy code=0 statut=ok duree_ms=1 =====
+
+===== LSAF-BLOC DEBUT id=C03.noyau =====
+# titre    : C03.noyau
+===== KERNEL RUNNING =====
+5.15.0-105-generic
+
+===== INSTALLED KERNEL PACKAGES =====
+ii  linux-image-5.15.0-105-generic 5.15.0-105.115 amd64 Signed kernel image generic
+ii  linux-image-5.15.0-112-generic 5.15.0-112.122 amd64 Signed kernel image generic
+
+===== REBOOT STATUS =====
+REBOOT_REQUIRED=YES
+linux-image-5.15.0-112-generic
+===== LSAF-BLOC FIN id=C03.noyau code=0 statut=ok duree_ms=1 =====
+
+===== LSAF-BLOC DEBUT id=C03.sources =====
+# titre    : C03.sources
+===== APT SOURCES CONFIGURATION =====
+--- /etc/apt/sources.list.d ---
+
+--- /etc/apt/sources.list ---
+deb http://deb.example.org/debian stable main
+===== LSAF-BLOC FIN id=C03.sources code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C03 - statut d'exécution : termine
+################################################################

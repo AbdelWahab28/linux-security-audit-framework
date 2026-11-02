@@ -1,0 +1,39 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C08
+# intitule     : Pare-feu / filtrage réseau
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C08.parefeu =====
+# titre    : C08.parefeu
+===== ETAT DU FIREWALL =====
+Status: inactive
+
+===== NFTABLES =====
+table ip filter {
+	chain INPUT {
+		type filter hook input priority filter; policy accept;
+	}
+}
+
+===== IPTABLES =====
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain FORWARD (policy DROP 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination
+
+===== FIREWALLD =====
+===== LSAF-BLOC FIN id=C08.parefeu code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C08 - statut d'exécution : termine
+################################################################

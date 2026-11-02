@@ -1,0 +1,52 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C16
+# intitule     : Debsecan
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C16.identification =====
+# titre    : C16.identification
+===== DEBSECAN - IDENTIFICATION =====
+Serveur : exemple
+Date/heure : Mon Nov  2 10:15:00 UTC 2026
+
+===== INSTALLATION =====
+ii  debsecan 0.4.20.1 all Debian Security Analyzer
+
+===== VERSION =====
+debsecan 0.4.20.1
+===== LSAF-BLOC FIN id=C16.identification code=0 statut=ok duree_ms=1 =====
+
+===== LSAF-BLOC DEBUT id=C16.standard =====
+# titre    : C16.standard
+CVE-2099-0001 libexemple1 (remotely exploitable, high urgency)
+CVE-2099-0002 vim-tiny (low urgency)
+===== LSAF-BLOC FIN id=C16.standard code=0 statut=ok duree_ms=1 =====
+
+===== LSAF-BLOC DEBUT id=C16.detail =====
+# titre    : C16.detail
+CVE-2099-0001 (remotely exploitable, high urgency)
+  installed: libexemple1 1.0-1
+             (built from libexemple 1.0-1)
+CVE-2099-0002 (low urgency)
+  installed: vim-tiny 2:8.2.3995-1ubuntu2.1
+===== LSAF-BLOC FIN id=C16.detail code=0 statut=ok duree_ms=1 =====
+
+===== LSAF-BLOC DEBUT id=C16.systeme =====
+# titre    : C16.systeme
+PRETTY_NAME="Ubuntu 22.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+===== LSAF-BLOC FIN id=C16.systeme code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C16 - statut d'exécution : termine
+################################################################

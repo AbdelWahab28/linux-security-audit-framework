@@ -1,0 +1,40 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C04
+# intitule     : Logiciels installés
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C04.logiciels =====
+# titre    : C04.logiciels
+===== PRINCIPAUX LOGICIELS =====
+nginx	1.22.1-9
+openssh-server	1:9.2p1-2
+python3	3.11.2-1
+docker.io	24.0.7-0ubuntu2
+postgresql-14	14.11-0ubuntu0.22.04.1
+===== LSAF-BLOC FIN id=C04.logiciels code=0 statut=ok duree_ms=1 =====
+
+===== LSAF-BLOC DEBUT id=C04.services =====
+# titre    : C04.services
+===== SERVICES ASSOCIES AUX LOGICIELS DETECTES =====
+
+--- NGINX ---
+● nginx.service - A high performance web server
+     Active: active (running) since Mon 2026-09-21
+
+--- SSH ---
+● ssh.service - OpenBSD Secure Shell server
+     Active: active (running) since Mon 2026-09-21
+
+--- RSYNC ---
+Unit rsync.service could not be found.
+===== LSAF-BLOC FIN id=C04.services code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C04 - statut d'exécution : termine
+################################################################

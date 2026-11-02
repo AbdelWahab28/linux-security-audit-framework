@@ -1,0 +1,19 @@
+# Exemple d'inventaire (serveurs fictifs, données synthétiques)
+# Copiez ce fichier en « inventaire.yaml » (exclu du dépôt par le .gitignore) et adaptez-le.
+# La clé est le nom du serveur tel qu'il apparaît dans le nom de la session (SERVEUR_AAAAMMJJ_HHMMSS).
+# Tous les champs sont facultatifs. Ils alimentent la feuille INVENTAIRE_AUDIT du classeur.
+
+serveurs:
+  SRV-EXEMPLE-01:
+    role: Serveur web fictif
+    environnement: Production        # Production | Préproduction | Test
+    criticite: Haute                 # Critique | Haute | Moyenne | Faible
+    domaine: Hors domaine            # Domaine | Hors domaine
+    responsable: Équipe système (fictive)
+    date_prevue: "2026-11-02"
+    commentaire: Exemple fictif
+  SRV-EXEMPLE-02:
+    role: Serveur d'administration fictif
+    environnement: Test
+    criticite: Moyenne
+    adresse_ip: 192.0.2.20           # facultatif : sinon lue dans la preuve C05

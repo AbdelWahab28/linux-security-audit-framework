@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lsaf.execution/1",
+  "title": "LSAF - description de l'exécution d'un contrôle (écrite par le collecteur)",
+  "type": "object",
+  "required": [
+    "schema",
+    "controle",
+    "intitule",
+    "session",
+    "hote",
+    "hote_detecte",
+    "version_collecteur",
+    "execute_en_root",
+    "debut",
+    "fin",
+    "statut_execution",
+    "fichier_preuve",
+    "sha256_preuve",
+    "blocs",
+    "annexes",
+    "notes"
+  ],
+  "properties": {
+    "schema": {
+      "const": "lsaf.execution/1"
+    },
+    "controle": {
+      "type": "string",
+      "pattern": "^C\\d{2}(-\\d{2})?$"
+    },
+    "intitule": {
+      "type": "string"
+    },
+    "session": {
+      "type": "string"
+    },
+    "hote": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9-]+$"
+    },
+    "hote_detecte": {
+      "type": "boolean"
+    },
+    "version_collecteur": {
+      "type": "string"
+    },
+    "execute_en_root": {
+      "type": "boolean"
+    },
+    "debut": {
+      "type": "string"
+    },
+    "fin": {
+      "type": "string"
+    },
+    "statut_execution": {
+      "enum": [
+        "termine",
+        "partiel",
+        "collecte_impossible",
+        "non_execute",
+        "simulation",
+        "en_echec"
+      ]
+    },
+    "fichier_preuve": {
+      "type": "string"
+    },
+    "sha256_preuve": {
+      "type": "string"
+    },
+    "blocs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "titre",
+          "commande",
+          "code_retour",
+          "statut",
+          "duree_ms"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "titre": {
+            "type": "string"
+          },
+          "commande": {
+            "type": "string"
+          },
+          "programmes_absents": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "code_retour": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "statut": {
+            "enum": [
+              "ok",
+              "code_non_nul",
+              "outil_absent",
+              "delai_depasse",
+              "erreur",
+              "simulation"
+            ]
+          },
+          "duree_ms": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "annexes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "fichier",
+          "sha256"
+        ]
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

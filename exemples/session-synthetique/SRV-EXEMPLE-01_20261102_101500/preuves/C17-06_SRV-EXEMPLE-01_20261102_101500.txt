@@ -1,0 +1,47 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C17-06
+# intitule     : Journalisation / audit / défense
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C17-06.journalisation =====
+# titre    : C17-06.journalisation
+===== C17-06 - LOGGING / AUDIT / DEFENSE =====
+Serveur : srv-exemple-01
+Date/heure : 2026-11-02 10:15:00
+
+===== SECTIONS LYNIS LOGGING / AUDIT =====
+4:[+] Logging and files
+
+===== FICHIERS SUPPRIMES MAIS ENCORE OUVERTS =====
+COMMAND PID USER FD TYPE DEVICE SIZE/OFF NLINK NODE NAME
+
+===== SYSTEMD-JOURNald =====
+active
+static
+
+===== JOURNALD - CONFIGURATION EFFECTIVE =====
+
+
+===== RSYSLOG =====
+active
+enabled
+
+===== RSYSLOG - CONFIGURATION =====
+
+
+===== RSYSLOG - FICHIERS DE CONFIGURATION =====
+/etc/rsyslog.d/50-default.conf
+
+===== JOURNAL 24H - ERREURS / ALERTES =====
+Nov 02 08:00:00 exemple systemd[1]: ligne d'alerte fictive
+===== LSAF-BLOC FIN id=C17-06.journalisation code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C17-06 - statut d'exécution : termine
+################################################################

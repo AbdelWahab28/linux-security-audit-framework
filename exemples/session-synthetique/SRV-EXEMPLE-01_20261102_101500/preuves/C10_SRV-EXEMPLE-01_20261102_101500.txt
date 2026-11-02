@@ -1,0 +1,38 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C10
+# intitule     : Utilisateurs, comptes et privilèges
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C10.comptes =====
+# titre    : C10.comptes
+===== COMPTES UTILISATEURS =====
+auditeur:1000:/home/auditeur:/bin/bash
+appli:1001:/home/appli:/bin/bash
+
+===== COMPTE ROOT =====
+root P 2026-01-10 0 99999 7 -1
+
+===== GROUPES PRIVILEGIES =====
+sudo:x:27:auditeur,appli
+adm:x:4:syslog,auditeur
+
+===== COMPTES AVEC SHELL INTERACTIF =====
+root:0:/root:/bin/bash
+auditeur:1000:/home/auditeur:/bin/bash
+appli:1001:/home/appli:/bin/bash
+
+===== COMPTES VERROUILLES / NON VERROUILLES =====
+daemon:LOCKED
+bin:LOCKED
+appli:LOCKED
+===== LSAF-BLOC FIN id=C10.comptes code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C10 - statut d'exécution : termine
+################################################################

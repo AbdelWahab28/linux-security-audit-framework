@@ -1,0 +1,30 @@
+{
+  "schema": "lsaf.execution/1",
+  "controle": "C17-04",
+  "intitule": "Kernel hardening / sysctl",
+  "session": "SRV-EXEMPLE-01_20261102_101500",
+  "hote": "SRV-EXEMPLE-01",
+  "hote_detecte": true,
+  "version_collecteur": "0.1.0",
+  "execute_en_root": true,
+  "debut": "2026-11-02T10:15:00+00:00",
+  "fin": "2026-11-02T10:15:00+00:00",
+  "statut_execution": "termine",
+  "fichier_preuve": "C17-04_SRV-EXEMPLE-01_20261102_101500.txt",
+  "sha256_preuve": "d920fae0e93cd384ce73f6935f755b1a9e00a906b4e07d2c9dc28a7b67a2b3e5",
+  "blocs": [
+    {
+      "id": "C17-04.sysctl",
+      "titre": "C17-04.sysctl",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    }
+  ],
+  "annexes": [],
+  "notes": [
+    "DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lsaf.session/1",
+  "title": "LSAF - manifeste de session",
+  "type": "object",
+  "required": [
+    "schema",
+    "session",
+    "hote",
+    "hote_detecte",
+    "version_collecteur",
+    "debut",
+    "fin",
+    "horodatage",
+    "execute_en_root",
+    "systeme",
+    "parametres",
+    "controles_demandes",
+    "controles"
+  ],
+  "properties": {
+    "schema": {
+      "const": "lsaf.session/1"
+    },
+    "session": {
+      "type": "string"
+    },
+    "hote": {
+      "type": "string"
+    },
+    "hote_detecte": {
+      "type": "boolean"
+    },
+    "source_libelle": {
+      "type": "string"
+    },
+    "alias": {
+      "type": "boolean"
+    },
+    "version_collecteur": {
+      "type": "string"
+    },
+    "debut": {
+      "type": "string"
+    },
+    "fin": {
+      "type": "string"
+    },
+    "horodatage": {
+      "type": "string",
+      "pattern": "^\\d{8}_\\d{6}$"
+    },
+    "execute_en_root": {
+      "type": "boolean"
+    },
+    "systeme": {
+      "type": "object"
+    },
+    "parametres": {
+      "type": "object"
+    },
+    "controles_demandes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "controles": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": [
+          "termine",
+          "partiel",
+          "collecte_impossible",
+          "non_execute",
+          "simulation",
+          "en_echec"
+        ]
+      }
+    }
+  }
+}

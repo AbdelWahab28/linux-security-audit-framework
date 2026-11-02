@@ -1,0 +1,57 @@
+{
+  "schema": "lsaf.execution/1",
+  "controle": "C16",
+  "intitule": "Debsecan",
+  "session": "SRV-EXEMPLE-01_20261102_101500",
+  "hote": "SRV-EXEMPLE-01",
+  "hote_detecte": true,
+  "version_collecteur": "0.1.0",
+  "execute_en_root": true,
+  "debut": "2026-11-02T10:15:00+00:00",
+  "fin": "2026-11-02T10:15:00+00:00",
+  "statut_execution": "termine",
+  "fichier_preuve": "C16_SRV-EXEMPLE-01_20261102_101500.txt",
+  "sha256_preuve": "28b2ec331f53dc317a372fa009afc8da7ecb4342345dc81d9d19fa3b57cba3c9",
+  "blocs": [
+    {
+      "id": "C16.identification",
+      "titre": "C16.identification",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    },
+    {
+      "id": "C16.standard",
+      "titre": "C16.standard",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    },
+    {
+      "id": "C16.detail",
+      "titre": "C16.detail",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    },
+    {
+      "id": "C16.systeme",
+      "titre": "C16.systeme",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    }
+  ],
+  "annexes": [],
+  "notes": [
+    "DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL"
+  ]
+}

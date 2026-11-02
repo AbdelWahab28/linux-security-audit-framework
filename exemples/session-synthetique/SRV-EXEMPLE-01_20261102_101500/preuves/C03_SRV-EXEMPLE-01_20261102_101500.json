@@ -1,0 +1,57 @@
+{
+  "schema": "lsaf.execution/1",
+  "controle": "C03",
+  "intitule": "État des mises à jour",
+  "session": "SRV-EXEMPLE-01_20261102_101500",
+  "hote": "SRV-EXEMPLE-01",
+  "hote_detecte": true,
+  "version_collecteur": "0.1.0",
+  "execute_en_root": true,
+  "debut": "2026-11-02T10:15:00+00:00",
+  "fin": "2026-11-02T10:15:00+00:00",
+  "statut_execution": "termine",
+  "fichier_preuve": "C03_SRV-EXEMPLE-01_20261102_101500.txt",
+  "sha256_preuve": "f5c032249c9574a5268d481b5c668020cba14e2a263e226facf1bd26e38e473e",
+  "blocs": [
+    {
+      "id": "C03.paquets",
+      "titre": "C03.paquets",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    },
+    {
+      "id": "C03.policy",
+      "titre": "C03.policy",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    },
+    {
+      "id": "C03.noyau",
+      "titre": "C03.noyau",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    },
+    {
+      "id": "C03.sources",
+      "titre": "C03.sources",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    }
+  ],
+  "annexes": [],
+  "notes": [
+    "DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL"
+  ]
+}

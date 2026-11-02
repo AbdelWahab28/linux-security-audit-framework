@@ -1,0 +1,48 @@
+# Exemple de configuration du rapport
+# Copiez ce fichier en « config/lsaf.yaml » (exclu du dépôt) et adaptez-le.
+# Utilisation : lsaf rapport LSAF_Audit_….xlsx --config config/lsaf.yaml
+# Tous les champs sont facultatifs ; une information absente est indiquée « N.R. » dans le rapport.
+
+organisation: Organisation fictive
+intitule: Audit de sécurité technique des serveurs Linux
+auteur: Équipe SSI (fictive)
+version: "1.0"
+confidentialite: Interne          # Public | Interne | Confidentiel | Secret (pied de page « Critère de diffusion »)
+campagne: EXEMPLE-2026            # utilisé dans le nom du fichier
+# logo: chemin/vers/logo.png               # chemin relatif à ce fichier
+# image_pied_de_page: chemin/vers/bandeau.png
+
+historique:
+  - version: "0.1"
+    date: 02/11/2026
+    auteur: Équipe SSI (fictive)
+    modification: Version de travail
+  - version: "1.0"
+    date: 09/11/2026
+    auteur: Équipe SSI (fictive)
+    modification: Version validée
+
+# Textes rédigés par l'auditeur. Sans texte, l'encadré correspondant est omis.
+textes:
+  contexte: >
+    Texte fictif : présenter ici le contexte de l'audit.
+  appreciation: >
+    Texte fictif : appréciation générale de l'auditeur, reprise dans la synthèse exécutive.
+  conclusion: >
+    Texte fictif : conclusion de l'auditeur.
+  pilotage: >
+    Texte fictif : recommandation de pilotage (encadré de la conclusion).
+  politique_interne: >
+    Texte fictif : positionnement de la politique interne par rapport aux référentiels.
+
+hors_perimetre:
+  - Texte fictif : élément non couvert par l'audit (par exemple le filtrage réseau amont).
+
+referentiels:
+  - nom: Référentiel fictif
+    version: "1.0"
+    utilisation: Texte fictif décrivant l'usage du référentiel.
+
+# Définitions de l'échelle de criticité (facultatif : des définitions génériques sont utilisées sinon)
+# echelle_criticite:
+#   Critique: {definition: "…", traitement: "Traitement immédiat"}

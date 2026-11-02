@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lsaf.resultat/1",
+  "title": "LSAF - résultat structuré d'un contrôle (écrit par lsaf analyser)",
+  "type": "object",
+  "required": [
+    "schema",
+    "controle",
+    "intitule",
+    "session",
+    "hote",
+    "date_collecte",
+    "statut",
+    "statut_execution",
+    "fichier_preuve",
+    "integrite",
+    "resume",
+    "valeurs",
+    "a_verifier",
+    "limites",
+    "erreurs",
+    "blocs"
+  ],
+  "properties": {
+    "schema": {
+      "const": "lsaf.resultat/1"
+    },
+    "controle": {
+      "type": "string"
+    },
+    "intitule": {
+      "type": "string"
+    },
+    "session": {
+      "type": "string"
+    },
+    "hote": {
+      "type": "string"
+    },
+    "date_collecte": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "statut": {
+      "enum": [
+        "reussi",
+        "en_echec",
+        "a_verifier",
+        "non_execute",
+        "partiel",
+        "collecte_impossible",
+        "preuve_insuffisante"
+      ]
+    },
+    "statut_execution": {
+      "enum": [
+        "termine",
+        "partiel",
+        "collecte_impossible",
+        "non_execute",
+        "simulation",
+        "en_echec"
+      ]
+    },
+    "fichier_preuve": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fichier_json": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sha256_preuve": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "integrite": {
+      "enum": [
+        "verifiee",
+        "modifiee",
+        "absente",
+        "non_verifiable"
+      ]
+    },
+    "resume": {
+      "type": "string"
+    },
+    "valeurs": {
+      "type": "object"
+    },
+    "a_verifier": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "erreurs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blocs": {
+      "type": "array"
+    }
+  }
+}

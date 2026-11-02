@@ -1,0 +1,37 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C05
+# intitule     : Réseau
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C05.reseau =====
+# titre    : C05.reseau
+===== HOST / INTERFACES =====
+srv-exemple-01
+lo               UNKNOWN        127.0.0.1/8 ::1/128
+ens33            UP             192.0.2.10/24 fe80::1/64
+
+===== ROUTING =====
+default via 192.0.2.1 dev ens33 proto static
+192.0.2.0/24 dev ens33 proto kernel scope link src 192.0.2.10
+
+===== DNS =====
+Global
+Link 2 (ens33)
+Current DNS Server: 8.8.8.8
+       DNS Servers: 8.8.8.8 198.51.100.53
+
+===== NETWORK CONFIGURATION =====
+-rw------- 1 root root 300 Jan 10 01-netcfg.yaml
+network:
+  version: 2
+===== LSAF-BLOC FIN id=C05.reseau code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C05 - statut d'exécution : termine
+################################################################

@@ -1,0 +1,80 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C17
+# intitule     : Durcissement - résultat global Lynis
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C17.identification =====
+# titre    : C17.identification
+===== C17 - AUDIT LYNIS GLOBAL =====
+Serveur : srv-exemple-01
+Date/heure : 2026-11-02 10:15:00
+
+===== VERSION LYNIS =====
+/usr/sbin/lynis
+3.0.9
+
+===== VERIFICATION DES PRIVILEGES SUDO =====
+Code retour sudo : 0
+
+===== IDENTITE COURANTE =====
+uid=0(root) gid=0(root) groups=0(root)
+===== LSAF-BLOC FIN id=C17.identification code=0 statut=ok duree_ms=1 =====
+
+===== LSAF-BLOC DEBUT id=C17.audit_lynis =====
+# titre    : C17.audit_lynis
+[+] Boot and services
+------------------------------------
+  - Service Manager [ systemd ]
+
+[+] Logging and files
+------------------------------------
+
+[+] Networking
+------------------------------------
+
+================================================================================
+
+  -[ Lynis 3.0.9 Results ]-
+
+  Warnings (1):
+  ----------------------------
+  ! Avertissement fictif sur un paramètre de configuration [EXMP-0001]
+
+  Suggestions (2):
+  ----------------------------
+  * Suggestion fictive numéro un [EXMP-0002]
+  * Suggestion fictive numéro deux [EXMP-0003]
+
+================================================================================
+
+  Lynis security scan details:
+
+  Hardening index : 58 [###########         ]
+  Tests performed : 251
+
+===== LSAF-BLOC FIN id=C17.audit_lynis code=0 statut=ok duree_ms=1 =====
+
+===== LSAF-BLOC DEBUT id=C17.sections =====
+# titre    : C17.sections
+1:[+] Boot and services
+4:[+] Logging and files
+7:[+] Networking
+===== LSAF-BLOC FIN id=C17.sections code=0 statut=ok duree_ms=1 =====
+
+===== LSAF-BLOC DEBUT id=C17.resultats =====
+# titre    : C17.resultats
+12:  Warnings (1):
+16:  Suggestions (2):
+24:  Hardening index : 58 [###########         ]
+25:  Tests performed : 251
+===== LSAF-BLOC FIN id=C17.resultats code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C17 - statut d'exécution : termine
+################################################################

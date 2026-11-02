@@ -1,0 +1,39 @@
+{
+  "schema": "lsaf.execution/1",
+  "controle": "C04",
+  "intitule": "Logiciels installés",
+  "session": "SRV-EXEMPLE-01_20261102_101500",
+  "hote": "SRV-EXEMPLE-01",
+  "hote_detecte": true,
+  "version_collecteur": "0.1.0",
+  "execute_en_root": true,
+  "debut": "2026-11-02T10:15:00+00:00",
+  "fin": "2026-11-02T10:15:00+00:00",
+  "statut_execution": "termine",
+  "fichier_preuve": "C04_SRV-EXEMPLE-01_20261102_101500.txt",
+  "sha256_preuve": "bba7e93168f6a8cd3baa9cc90973953619a3b0dbac3a449043f892765f966e71",
+  "blocs": [
+    {
+      "id": "C04.logiciels",
+      "titre": "C04.logiciels",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    },
+    {
+      "id": "C04.services",
+      "titre": "C04.services",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    }
+  ],
+  "annexes": [],
+  "notes": [
+    "DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL"
+  ]
+}

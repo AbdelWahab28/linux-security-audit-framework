@@ -1,0 +1,40 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C06
+# intitule     : Services
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C06.services =====
+# titre    : C06.services
+===== SERVICES ACTIFS =====
+containerd.service
+cron.service
+dbus.service
+docker.service
+nginx.service
+postgresql.service
+rsyslog.service
+ssh.service
+systemd-journald.service
+systemd-timesyncd.service
+
+===== ETAT DES SERVICES CLES =====
+nginx           : active
+postgresql      : active
+ssh             : active
+docker          : active
+containerd      : active
+rsync           : inactive
+smbd            : inactive
+nmbd            : inactive
+apache2         : inactive
+===== LSAF-BLOC FIN id=C06.services code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C06 - statut d'exécution : termine
+################################################################

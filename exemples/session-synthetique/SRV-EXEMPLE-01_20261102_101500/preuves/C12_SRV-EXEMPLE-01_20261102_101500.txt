@@ -1,0 +1,34 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C12
+# intitule     : Logs et journalisation
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C12.journalisation =====
+# titre    : C12.journalisation
+===== SERVICES DE JOURNALISATION =====
+active
+active
+
+===== JOURNAL SYSTEMD =====
+Archived and active journals take up 512.0M in the file system.
+
+===== FICHIERS DE LOG =====
+-rw-r----- 1 syslog adm 1.2M Nov  2 10:00 /var/log/auth.log
+-rw-r----- 1 syslog adm 5.0M Nov  2 10:00 /var/log/syslog
+
+===== ROTATION DES LOGS =====
+-rw-r--r-- 1 root root 591 Jan 10 /etc/logrotate.conf
+
+===== ERREURS RECENTES =====
+Nov 02 09:00:01 exemple kernel: ligne d'erreur fictive
+===== LSAF-BLOC FIN id=C12.journalisation code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C12 - statut d'exécution : termine
+################################################################

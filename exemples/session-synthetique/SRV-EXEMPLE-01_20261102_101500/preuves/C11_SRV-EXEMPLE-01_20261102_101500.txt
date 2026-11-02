@@ -1,0 +1,36 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C11
+# intitule     : Permissions
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C11.permissions =====
+# titre    : C11.permissions
+===== FICHIERS SENSIBLES =====
+-rw-r--r-- 1 root root   2100 Jan 10 09:00 /etc/group
+-rw-r--r-- 1 root root   3100 Jan 10 09:00 /etc/passwd
+-rw-r--r-- 1 root shadow 1500 Jan 10 09:00 /etc/shadow
+-r--r----- 1 root root    755 Jan 10 09:00 /etc/sudoers
+
+===== REPERTOIRES SENSIBLES =====
+drwxr-xr-x  4 root root 4096 Jan 10 09:00 /home
+drwx------  5 root root 4096 Jan 10 09:00 /root
+drwxrwxrwt 12 root root 4096 Nov  2 10:00 /tmp
+drwxrwxrwt  6 root root 4096 Nov  2 10:00 /var/tmp
+
+===== SUID / SGID =====
+-rwsr-xr-x root root /usr/bin/passwd
+-rwsr-xr-x root root /usr/bin/sudo
+
+===== FICHIERS WORLD-WRITABLE =====
+-rw-rw-rw- root root /etc/appli-exemple.conf
+===== LSAF-BLOC FIN id=C11.permissions code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C11 - statut d'exécution : termine
+################################################################

@@ -1,0 +1,30 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C14
+# intitule     : Tâches planifiées
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C14.taches =====
+# titre    : C14.taches
+===== CRON - TACHES PLANIFIEES =====
+30 2 * * * /usr/local/bin/sauvegarde-exemple.sh
+
+===== CRON SYSTEME =====
+/etc/cron.d:
+total 12
+drwxr-xr-x 2 root root 4096 Jan 10 .
+-rw-r--r-- 1 root root  102 Jan 10 e2scrub_all
+
+===== SYSTEMD TIMERS =====
+NEXT LEFT LAST PASSED UNIT ACTIVATES
+2 timers listed.
+===== LSAF-BLOC FIN id=C14.taches code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C14 - statut d'exécution : termine
+################################################################

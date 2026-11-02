@@ -1,0 +1,30 @@
+{
+  "schema": "lsaf.execution/1",
+  "controle": "C08",
+  "intitule": "Pare-feu / filtrage réseau",
+  "session": "SRV-EXEMPLE-01_20261102_101500",
+  "hote": "SRV-EXEMPLE-01",
+  "hote_detecte": true,
+  "version_collecteur": "0.1.0",
+  "execute_en_root": true,
+  "debut": "2026-11-02T10:15:00+00:00",
+  "fin": "2026-11-02T10:15:00+00:00",
+  "statut_execution": "termine",
+  "fichier_preuve": "C08_SRV-EXEMPLE-01_20261102_101500.txt",
+  "sha256_preuve": "22404310cef4806ab1c6a8facbab1144f2f4936f3239573b2f0f28e04cfb6f14",
+  "blocs": [
+    {
+      "id": "C08.parefeu",
+      "titre": "C08.parefeu",
+      "commande": "synthétique",
+      "programmes_absents": null,
+      "code_retour": 0,
+      "statut": "ok",
+      "duree_ms": 1
+    }
+  ],
+  "annexes": [],
+  "notes": [
+    "DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL"
+  ]
+}

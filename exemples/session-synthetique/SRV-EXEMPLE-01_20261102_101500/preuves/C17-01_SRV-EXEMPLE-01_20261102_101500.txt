@@ -1,0 +1,58 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C17-01
+# intitule     : systemd / isolation des services
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C17-01.systemd =====
+# titre    : C17-01.systemd
+===== C17-01 - SYSTEMD / SERVICES / ISOLATION =====
+Serveur : srv-exemple-01
+Date/heure : 2026-11-02 10:15:00
+
+===== SECTIONS LYNIS RELATIVES AUX SERVICES =====
+1:[+] Boot and services
+
+===== SYSTEMD-ANALYZE SECURITY =====
+UNIT                                 EXPOSURE PREDICATE HAPPY
+cron.service                    9.6 UNSAFE    :-(
+ssh.service                     9.6 UNSAFE    :-(
+nginx.service                   9.6 UNSAFE    :-(
+systemd-journald.service        4.4 OK        :-)
+postgresql.service              9.2 UNSAFE    :-(
+
+===== SERVICES ACTIFS =====
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+  containerd.service loaded active running Service fictif
+  cron.service loaded active running Service fictif
+  dbus.service loaded active running Service fictif
+  docker.service loaded active running Service fictif
+  nginx.service loaded active running Service fictif
+  postgresql.service loaded active running Service fictif
+  rsyslog.service loaded active running Service fictif
+  ssh.service loaded active running Service fictif
+  systemd-journald.service loaded active running Service fictif
+  systemd-timesyncd.service loaded active running Service fictif
+
+===== SERVICES ENABLED =====
+UNIT FILE STATE PRESET
+containerd.service enabled enabled
+cron.service enabled enabled
+dbus.service enabled enabled
+docker.service enabled enabled
+nginx.service enabled enabled
+postgresql.service enabled enabled
+rsyslog.service enabled enabled
+ssh.service enabled enabled
+systemd-journald.service enabled enabled
+systemd-timesyncd.service enabled enabled
+===== LSAF-BLOC FIN id=C17-01.systemd code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C17-01 - statut d'exécution : termine
+################################################################

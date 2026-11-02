@@ -1,0 +1,51 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C17-07
+# intitule     : Intégrité / protections complémentaires
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C17-07.integrite =====
+# titre    : C17-07.integrite
+===== C17-07 - INTEGRITE / ANTIMALWARE / IDS / PERMISSIONS =====
+Serveur : srv-exemple-01
+Date/heure : 2026-11-02 10:15:00
+
+===== SECTIONS LYNIS INTEGRITE / MALWARE / DEFENSE =====
+
+===== OUTILS INTEGRITE =====
+--- aide ---
+--- tripwire ---
+
+===== PACKAGES INTEGRITE =====
+
+
+===== ANTIMALWARE / ROOTKIT =====
+--- clamscan ---
+--- rkhunter ---
+
+===== PACKAGES ANTIMALWARE / ROOTKIT =====
+
+===== IDS / IPS =====
+--- suricata ---
+
+===== PACKAGES IDS / IPS =====
+
+===== PERMISSIONS GRUB =====
+  File: /boot/grub/grub.cfg
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+
+===== PERMISSIONS /ETC/CRONTAB =====
+  File: /etc/crontab
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+
+===== PERMISSIONS REPERTOIRES CRON =====
+===== LSAF-BLOC FIN id=C17-07.integrite code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C17-07 - statut d'exécution : termine
+################################################################

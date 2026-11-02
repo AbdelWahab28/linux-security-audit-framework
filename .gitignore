@@ -1,0 +1,68 @@
+# =============================================================================
+# LSAF — fichiers qui ne doivent JAMAIS être publiés
+# Les preuves, résultats et livrables décrivent des systèmes réels : ils restent
+# hors du dépôt. Les exemples fictifs se trouvent uniquement dans exemples/.
+# =============================================================================
+
+# --- Sessions de collecte et sorties locales ---------------------------------
+lsaf-sessions/
+lsaf-demo/
+livrables/
+sessions/
+preuves/
+resultats/
+journal/
+!exemples/**/preuves/
+!exemples/**/resultats/
+
+# --- Fichiers produits par le collecteur ---------------------------------------
+C[0-9][0-9]_*_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9][0-9][0-9][0-9]*
+C[0-9][0-9]-[0-9][0-9]_*_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9][0-9][0-9][0-9][0-9]*
+!exemples/**/C[0-9][0-9]*
+SHA256SUMS
+!exemples/**/SHA256SUMS
+lynis-report.dat
+*.lynis.txt
+!exemples/**/*.lynis.txt
+LSAF_Consolide_*.json
+
+# --- Livrables et documents bureautiques ----------------------------------------
+*.xlsx
+*.xlsm
+*.xls
+*.docx
+*.doc
+*.pdf
+*.pptx
+*.odt
+*.ods
+~$*
+
+# --- Journaux et fichiers temporaires --------------------------------------------
+*.log
+tmp/
+*.tmp
+*.swp
+.DS_Store
+
+# --- Configuration locale, inventaires et secrets --------------------------------
+config/lsaf.yaml
+lsaf.yaml
+*.local.yaml
+inventaire.yaml
+inventaire.yml
+liste-interdite.txt
+*termes-interdits*.txt
+.env
+*.pem
+*.key
+
+# --- Python ---------------------------------------------------------------------
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+venv/

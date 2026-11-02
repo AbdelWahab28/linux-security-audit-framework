@@ -1,0 +1,71 @@
+################################################################
+# DONNEES SYNTHETIQUES - SERVEUR FICTIF GENERE PAR « lsaf demo » - AUCUN RESULTAT D'AUDIT REEL
+# controle     : C17-04
+# intitule     : Kernel hardening / sysctl
+# session      : SRV-EXEMPLE-01_20261102_101500
+# hote         : SRV-EXEMPLE-01
+# date_collecte: 2026-11-02T10:15:00+00:00
+# collecteur   : lsaf-collecte 0.1.0 (synthétique)
+# privileges   : root
+################################################################
+
+===== LSAF-BLOC DEBUT id=C17-04.sysctl =====
+# titre    : C17-04.sysctl
+===== C17-04 - KERNEL HARDENING / SYSCTL =====
+Serveur : srv-exemple-01
+Date/heure : 2026-11-02 10:15:00
+
+===== SYSCTL - PARAMETRES RESEAU =====
+net.ipv4.ip_forward = 1
+net.ipv4.conf.all.accept_redirects = 1
+net.ipv4.conf.default.accept_redirects = 1
+net.ipv4.conf.all.send_redirects = 1
+net.ipv4.conf.default.send_redirects = 1
+net.ipv4.conf.all.secure_redirects = 1
+net.ipv4.conf.default.secure_redirects = 1
+net.ipv4.conf.all.log_martians = 0
+net.ipv4.conf.default.log_martians = 0
+net.ipv4.conf.all.rp_filter = 2
+net.ipv4.conf.default.rp_filter = 2
+
+===== LOCALISATION SYSCTL =====
+/usr/sbin/sysctl
+
+===== SYSCTL - VERIFICATION VIA /USR/SBIN/SYSCTL =====
+net.ipv4.ip_forward = 1
+net.ipv4.conf.all.accept_redirects = 1
+net.ipv4.conf.default.accept_redirects = 1
+net.ipv4.conf.all.send_redirects = 1
+net.ipv4.conf.default.send_redirects = 1
+net.ipv4.conf.all.secure_redirects = 1
+net.ipv4.conf.default.secure_redirects = 1
+net.ipv4.conf.all.log_martians = 0
+net.ipv4.conf.default.log_martians = 0
+net.ipv4.conf.all.rp_filter = 2
+net.ipv4.conf.default.rp_filter = 2
+
+===== PARAMETRES KERNEL DE SECURITE =====
+fs.suid_dumpable = 2
+fs.protected_symlinks = 1
+fs.protected_hardlinks = 1
+kernel.yama.ptrace_scope = 1
+kernel.kptr_restrict = 1
+kernel.dmesg_restrict = 0
+kernel.unprivileged_bpf_disabled = 2
+sysctl: cannot stat /proc/sys/kernel/unprivileged_userns_clone: No such file or directory
+
+===== CONFIGURATION SYSCTL PERSISTANTE =====
+
+
+===== CORE DUMPS =====
+0
+
+○ systemd-coredump.socket
+     Active: inactive (dead)
+
+fs.suid_dumpable = 2
+===== LSAF-BLOC FIN id=C17-04.sysctl code=0 statut=ok duree_ms=1 =====
+
+################################################################
+# fin du contrôle C17-04 - statut d'exécution : termine
+################################################################
